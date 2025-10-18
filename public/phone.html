@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Camera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overscroll-behavior-y: contain;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 overflow-hidden">
+    <div class="relative w-screen h-screen">
+        <video id="video" autoplay playsinline muted class="w-full h-full object-cover"></video>
+        <canvas id="canvas" class="hidden"></canvas>
+        <div id="status" class="absolute bottom-4 left-4 py-1 px-3 rounded-full text-white font-semibold">
+            Initializing...
+        </div>
+        <div class="absolute top-4 right-4 w-4 h-4 rounded-full bg-red-500 animate-pulse" id="live-indicator"></div>
+    </div>
+    <script src="/phone.js"></script>
+</body>
+</html>

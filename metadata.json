@@ -1,0 +1,4 @@
+{
+  "name": "Live Food Detector",
+  "description": "Uses your camera and the Clarifai API to identify food items in real-time and speaks the result."
+}
